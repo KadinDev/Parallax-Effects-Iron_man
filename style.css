@@ -1,0 +1,109 @@
+@import url('http://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+
+body 
+{
+    background: #0a2a43;
+}
+
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+section::before
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #0a2a43, transparent);
+    z-index: 10;
+}
+
+.sec 
+{
+    position: relative;
+    padding: 100px;
+}
+
+.sec h2 
+{
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.sec p 
+{
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+#bg 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+#moon
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: 100%;
+}
+
+#cloud1
+{
+    position: absolute;
+    left: 0;
+    top: 100px;
+    max-width: 600px;
+}
+
+#cloud2
+{
+    position: absolute;
+    right: 0;
+    top: 200px;
+    max-width: 600px;
+}
+
+#jet
+{
+    position: absolute;
+    left: 150px;
+    top: 50px;
+    max-width: 100%;
+    transform: scale(0);
+}
+
+#ironman
+{
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+    top: 700px;
+    transform: scale(0);
+}
